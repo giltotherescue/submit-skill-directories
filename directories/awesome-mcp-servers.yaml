@@ -1,0 +1,44 @@
+id: awesome-mcp-servers
+name: awesome-mcp-servers
+description: >
+  Community curated awesome list of Model Context Protocol (MCP) servers.
+  Useful when the target project is MCP-first or ships MCP alongside skills.
+status: active
+
+access:
+  class: github_pr
+  url: https://github.com/punkpeye/awesome-mcp-servers
+  catalog_repo: punkpeye/awesome-mcp-servers
+  catalog_path: README.md
+  notes: >
+    Add server entry via PR following list format. Use gh/API only; delete fork after merge/close.
+    For Claude-specific connector listing, also see claude-connectors-directory.
+
+listing_unit: product
+splits_skills: false
+
+hosts:
+  - cross-platform
+  - claude
+  - cursor
+
+item_types:
+  - mcp
+
+install_guidance: >
+  Document MCP install via host connector UI (Claude connectors, Cursor MCP config, etc.).
+
+proposal_fields:
+  - list_section
+  - server_name
+  - one_line_description
+  - repo_or_remote_url
+
+references:
+  - label: Repository
+    url: https://github.com/punkpeye/awesome-mcp-servers
+
+tags:
+  - awesome-list
+  - mcp
+  - community

@@ -1,0 +1,44 @@
+id: heilcheng-awesome-agent-skills
+name: Agent Skill Index (heilcheng/awesome-agent-skills)
+description: >
+  Large community Agent Skill Index with tutorials, official directory links, and curated entries.
+  Maintained as a GitHub README; contributions via PR.
+status: active
+
+access:
+  class: github_pr
+  url: https://github.com/heilcheng/awesome-agent-skills
+  catalog_repo: heilcheng/awesome-agent-skills
+  catalog_path: README.md
+  notes: >
+    See CONTRIBUTING.md in catalog repo. One PR per addition preferred. Delete fork after merge/close.
+
+listing_unit: either
+splits_skills: false
+
+hosts:
+  - cross-platform
+
+item_types:
+  - skill
+  - plugin
+
+install_guidance: >
+  Point readers to official host marketplaces or plugin install docs for the listed artifact.
+
+proposal_fields:
+  - list_section
+  - one_line_description
+  - public_repo_url
+  - maintainer_contact
+
+references:
+  - label: Repository
+    url: https://github.com/heilcheng/awesome-agent-skills
+  - label: Contributing
+    url: https://github.com/heilcheng/awesome-agent-skills/blob/main/CONTRIBUTING.md
+
+tags:
+  - awesome-list
+  - index
+  - community

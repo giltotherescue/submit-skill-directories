@@ -1,0 +1,44 @@
+id: claude-connectors-directory
+name: Claude Connectors Directory (MCP)
+description: >
+  Anthropic directory for MCP connectors (remote servers, MCPB desktop extensions, MCP Apps).
+  Complements the Claude plugin directory; focused on MCP tooling rather than skill bundles.
+status: active
+
+access:
+  class: web_form
+  url: https://platform.claude.com/connectors/submit
+  notes: >
+    Team or Enterprise organization typically required for claude.ai admin portal submissions.
+    Individual developers may use Console paths or desktop extension forms per current Anthropic docs.
+    Connectors re-enter review on metadata changes.
+
+listing_unit: product
+splits_skills: false
+
+hosts:
+  - claude
+
+item_types:
+  - mcp
+
+install_guidance: >
+  Users enable connectors from Claude.ai, Desktop, mobile, Claude Code, or Cowork connector UI.
+
+proposal_fields:
+  - mcp_server_url_or_repo
+  - connector_name
+  - connector_description
+  - test_account_notes
+  - tool_annotations_summary
+
+references:
+  - label: Connector submission docs
+    url: https://docs.anthropic.com/en/docs/connectors
+  - label: Building MCP connectors
+    url: https://docs.anthropic.com/en/docs/agents-and-tools/mcp
+
+tags:
+  - claude
+  - mcp
+  - official

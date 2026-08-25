@@ -1,0 +1,51 @@
+id: claude-plugin-directory
+name: Claude plugin directory
+description: >
+  Anthropic community plugin directory for Cowork and Claude Code (claude-plugins-official marketplace).
+  Lists plugins with skills, MCP, commands, and agents from public GitHub repos.
+status: active
+
+access:
+  class: web_form
+  url: https://platform.claude.com/plugins/submit
+  notes: >
+    Public GitHub repo required. Run `claude plugin validate` before submit.
+    claude.ai org form (Team/Enterprise) at claude.ai/admin-settings/directory/submissions/plugins/new
+    for org-scoped directory management. Review times vary.
+
+listing_unit: plugin
+splits_skills: false
+
+hosts:
+  - claude
+
+item_types:
+  - plugin
+  - skill
+  - mcp
+  - commands
+  - agents
+
+install_guidance: >
+  Users add plugins from Claude Code /plugins marketplace or Cowork plugin browser.
+  Do not lead with gh skill install or npx skills add as the primary path.
+
+proposal_fields:
+  - public_repo_url
+  - plugin_name
+  - plugin_description
+  - category
+  - install_copy
+
+references:
+  - label: Console submit
+    url: https://platform.claude.com/plugins/submit
+  - label: Claude submit docs
+    url: https://code.claude.com/docs/en/discover-plugins
+  - label: claude-plugins-official
+    url: https://github.com/anthropics/claude-plugins-official
+
+tags:
+  - claude
+  - official
+  - plugin

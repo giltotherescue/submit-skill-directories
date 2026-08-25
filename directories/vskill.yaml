@@ -1,0 +1,48 @@
+id: vskill
+name: vSkill (verified-skill.com)
+description: >
+  Verified skill registry with automated security scanning and LLM intent analysis.
+  Skills submitted from public GitHub repos containing SKILL.md.
+status: active
+
+access:
+  class: cli_publish
+  url: https://verified-skill.com/docs/submitting
+  notes: >
+    Submit via `npx vskill@latest submit owner/repo` or web form at verified-skill.com/submit.
+    Run `npx vskill@latest scan` locally first. Re-scanned on new commits.
+
+listing_unit: skill
+splits_skills: true
+
+hosts:
+  - cross-platform
+
+item_types:
+  - skill
+  - plugin
+
+install_guidance: >
+  End users install via vskill CLI into detected agent directories — position host marketplace
+  as primary when distributing a bundled plugin; vskill for verified single-skill distribution.
+
+proposal_fields:
+  - public_repo_url
+  - skill_path_in_repo
+  - scan_results_summary
+  - per_skill_opt_in
+
+references:
+  - label: Submitting docs
+    url: https://verified-skill.com/docs/submitting
+  - label: CLI reference
+    url: https://verified-skill.com/docs/cli-reference
+  - label: Security guidelines
+    url: https://verified-skill.com/docs/security-guidelines
+
+tags:
+  - registry
+  - verified
+  - security
+  - repo-import
+  - splits-skills

@@ -1,0 +1,42 @@
+id: awesome-claude-code
+name: awesome-claude-code
+description: >
+  Curated list of Claude Code skills, hooks, plugins, MCP servers, and workflows.
+  Community-maintained awesome list on GitHub.
+status: active
+
+access:
+  class: github_pr
+  url: https://github.com/hesreallyhim/awesome-claude-code
+  catalog_repo: hesreallyhim/awesome-claude-code
+  catalog_path: README.md
+  notes: >
+    Add entry under appropriate README section via PR. Use gh/API; delete fork after merge/close.
+
+listing_unit: either
+splits_skills: false
+
+hosts:
+  - claude
+
+item_types:
+  - skill
+  - plugin
+  - mcp
+
+install_guidance: >
+  Link to Claude plugin marketplace or /plugins install path for plugins; project skills for SKILL.md-only repos.
+
+proposal_fields:
+  - list_section
+  - one_line_description
+  - public_repo_url
+
+references:
+  - label: Repository
+    url: https://github.com/hesreallyhim/awesome-claude-code
+
+tags:
+  - awesome-list
+  - claude
+  - community

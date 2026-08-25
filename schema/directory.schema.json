@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/giltotherescue/submit-skill-directories/main/schema/directory.schema.json",
+  "title": "Skill directory manifest",
+  "description": "Manifest describing how to submit skills, host plugins, or MCP servers to a public directory or catalog.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "status",
+    "access"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "description": "Stable kebab-case identifier. Must match the YAML filename without extension."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable directory name."
+    },
+    "description": {
+      "type": "string",
+      "description": "What the directory lists and who it serves."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "wait", "skip"],
+      "description": "active = submit now; wait = blocked or queued; skip = do not target."
+    },
+    "access": {
+      "type": "object",
+      "required": ["class"],
+      "additionalProperties": false,
+      "properties": {
+        "class": {
+          "type": "string",
+          "enum": [
+            "web_form",
+            "github_pr",
+            "github_api",
+            "cli_publish",
+            "email",
+            "invite_only",
+            "auto_index"
+          ],
+          "description": "Primary submission channel."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Submission or onboarding URL when applicable."
+        },
+        "catalog_repo": {
+          "type": "string",
+          "description": "GitHub owner/repo of the catalog repository, if any. Use gh/API only — never clone."
+        },
+        "catalog_path": {
+          "type": "string",
+          "description": "Path within the catalog repo for PR-based listings."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Access caveats: org requirements, review gates, auth, etc."
+        }
+      }
+    },
+    "listing_unit": {
+      "type": "string",
+      "enum": ["skill", "plugin", "product", "either"],
+      "default": "either",
+      "description": "What one listing card represents. Use plugin or product for bundled host plugins with 2+ first-party SKILL.md files."
+    },
+    "splits_skills": {
+      "type": "boolean",
+      "default": false,
+      "description": "When true, the directory imports a repo and may create one card per discovered SKILL.md. Skip unless the user opts into per-skill cards."
+    },
+    "hosts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "cursor",
+          "claude",
+          "chatgpt",
+          "copilot",
+          "codex",
+          "gemini",
+          "windsurf",
+          "opencode",
+          "cross-platform",
+          "other"
+        ]
+      },
+      "uniqueItems": true,
+      "description": "Agent hosts or ecosystems the directory primarily targets."
+    },
+    "item_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["skill", "plugin", "mcp", "rules", "commands", "agents"]
+      },
+      "uniqueItems": true,
+      "description": "Component types accepted by the directory."
+    },
+    "install_guidance": {
+      "type": "string",
+      "description": "Recommended end-user install path (prefer host marketplace/plugin install)."
+    },
+    "proposal_fields": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Fields to collect before proposing a submission."
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      },
+      "description": "Official docs or submission pages."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true,
+      "description": "Free-form tags for filtering manifests."
+    }
+  }
+}

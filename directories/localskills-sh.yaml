@@ -1,0 +1,49 @@
+id: localskills-sh
+name: localskills.sh
+description: >
+  Team-oriented skills and rules registry with versioning, folders, SSO, and multi-platform install.
+  Publishes individual skills (SKILL.md folders) to a hosted catalog.
+status: active
+
+access:
+  class: web_form
+  url: https://localskills.sh
+  notes: >
+    Publish via dashboard (drag folder/zip) or `localskills publish`. Skills default to private;
+    set visibility public for directory listing. One skill slug per publish unit.
+
+listing_unit: skill
+splits_skills: true
+
+hosts:
+  - cross-platform
+  - cursor
+  - claude
+
+item_types:
+  - skill
+  - rules
+
+install_guidance: >
+  Team members install via localskills dashboard or CLI into native agent paths.
+  For public launches, still recommend host marketplace when distributing a bundled plugin.
+
+proposal_fields:
+  - skill_folder_path
+  - slug
+  - visibility
+  - per_skill_opt_in
+
+references:
+  - label: localskills.sh
+    url: https://localskills.sh
+  - label: Getting started
+    url: https://docs.localskills.sh/getting-started/
+  - label: Skills docs
+    url: https://docs.localskills.sh/skills/
+
+tags:
+  - registry
+  - team
+  - repo-import
+  - splits-skills

@@ -1,0 +1,40 @@
+id: anthropics-skills-repo
+name: anthropics/skills (official examples)
+description: >
+  Anthropic public reference skills repository — educational examples, not a general submission directory.
+  Do not submit third-party skills here unless collaborating with Anthropic.
+status: skip
+
+access:
+  class: invite_only
+  url: https://github.com/anthropics/skills
+  catalog_repo: anthropics/skills
+  notes: >
+    Reference implementation and official example skills only. Use claude-plugin-directory or
+    community registries for third-party listings.
+
+listing_unit: skill
+splits_skills: false
+
+hosts:
+  - claude
+  - cross-platform
+
+item_types:
+  - skill
+
+install_guidance: >
+  Users copy or install example skills into .claude/skills/ per Anthropic docs — not a marketplace.
+
+proposal_fields: []
+
+references:
+  - label: anthropics/skills
+    url: https://github.com/anthropics/skills
+  - label: Agent Skills specification
+    url: https://agentskills.io/specification
+
+tags:
+  - official
+  - reference
+  - skip

@@ -1,0 +1,44 @@
+id: skills-re
+name: skills.re (Agent Skill Registry)
+description: >
+  Agent-agnostic registry for versioning and evaluating SKILL.md packages from public GitHub repos.
+  Submit via GitHub import; may register multiple skills from one repo.
+status: active
+
+access:
+  class: web_form
+  url: https://skills.re/submit
+  notes: >
+    Connect GitHub via skills.re integrations for repo submit. Supports org/repo shorthand.
+    Excludes dist/ directories from imports. Eval suite runs before publication.
+
+listing_unit: skill
+splits_skills: true
+
+hosts:
+  - cross-platform
+  - claude
+  - codex
+
+item_types:
+  - skill
+
+install_guidance: >
+  Recommend host-native skill or plugin install. Registry CLI is secondary.
+
+proposal_fields:
+  - public_repo_url
+  - skill_paths_to_submit
+  - version_tag
+  - per_skill_opt_in
+
+references:
+  - label: Submit
+    url: https://skills.re/submit
+  - label: FAQ
+    url: https://skills.re/faq
+
+tags:
+  - registry
+  - repo-import
+  - splits-skills

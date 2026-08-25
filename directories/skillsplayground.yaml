@@ -1,0 +1,42 @@
+id: skillsplayground
+name: Skills Playground
+description: >
+  Community directory for Claude Code skills and plugins. Auto-detects plugin.json,
+  SKILL.md, and prompt directories from GitHub URLs.
+status: active
+
+access:
+  class: web_form
+  url: https://skillsplayground.com/submit/
+  notes: >
+    Paste GitHub repo URL, file path, or owner/repo shorthand. Provides README badge and install tracking.
+
+listing_unit: skill
+splits_skills: true
+
+hosts:
+  - claude
+
+item_types:
+  - skill
+  - plugin
+
+install_guidance: >
+  Users should install via Claude Code plugin marketplace or project skill paths.
+  Do not lead with npx skills add.
+
+proposal_fields:
+  - public_repo_url
+  - listing_title
+  - category_tags
+  - per_skill_opt_in
+
+references:
+  - label: Submit
+    url: https://skillsplayground.com/submit/
+
+tags:
+  - claude
+  - community
+  - repo-import
+  - splits-skills

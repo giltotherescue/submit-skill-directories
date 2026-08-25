@@ -1,0 +1,43 @@
+id: skills-sh
+name: skills.sh
+description: >
+  Open agent skills ecosystem leaderboard and registry (Vercel skills.sh).
+  Indexes public GitHub repos and exposes install stats; repo import may list each skill separately.
+status: active
+
+access:
+  class: auto_index
+  url: https://skills.sh
+  notes: >
+    Skills are discovered from public repos; leaderboard reflects install activity.
+    Repo import behavior treats multi-skill repos as multiple entries — use bundled-plugin rule.
+
+listing_unit: skill
+splits_skills: true
+
+hosts:
+  - cross-platform
+
+item_types:
+  - skill
+
+install_guidance: >
+  Prefer telling users to install via their agent host marketplace or plugin bundle.
+  If mentioning CLI, note it is advanced/secondary — not the primary distribution story.
+
+proposal_fields:
+  - public_repo_url
+  - skill_name_or_repo
+  - listing_unit_confirmation
+  - per_skill_opt_in
+
+references:
+  - label: skills.sh
+    url: https://skills.sh
+  - label: Agent Skills specification
+    url: https://agentskills.io/specification
+
+tags:
+  - registry
+  - repo-import
+  - splits-skills

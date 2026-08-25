@@ -1,0 +1,48 @@
+id: chatgpt-plugins-directory
+name: OpenAI Plugins Directory (ChatGPT / Codex)
+description: >
+  OpenAI Plugins Directory for ChatGPT and Codex. Accepts plugins packaging skills, MCP servers,
+  and optional UI. Distinct from Anthropic Claude directories.
+status: wait
+
+access:
+  class: web_form
+  url: https://platform.openai.com/plugins
+  notes: >
+    Verified individual or business with Apps Management write access typically required.
+    Manual review; demo account and positive/negative test cases often required for MCP plugins.
+    Confirm current portal URL and requirements before filing — policies change.
+
+listing_unit: plugin
+splits_skills: false
+
+hosts:
+  - chatgpt
+  - codex
+
+item_types:
+  - plugin
+  - skill
+  - mcp
+
+install_guidance: >
+  Users install from ChatGPT or Codex plugin surfaces after publisher publishes approved listing.
+
+proposal_fields:
+  - public_repo_url
+  - plugin_name
+  - plugin_description
+  - demo_account_notes
+  - test_case_summary
+
+references:
+  - label: OpenAI platform plugins
+    url: https://platform.openai.com/docs/plugins
+  - label: Plugins portal
+    url: https://platform.openai.com/plugins
+
+tags:
+  - openai
+  - chatgpt
+  - codex
+  - plugin
