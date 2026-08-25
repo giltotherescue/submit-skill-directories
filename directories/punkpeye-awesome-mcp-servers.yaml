@@ -1,0 +1,19 @@
+id: punkpeye-awesome-mcp-servers
+name: awesome-mcp-servers (punkpeye)
+description: Community curated awesome list of MCP servers.
+status: active
+access:
+  class: github_pr
+  notes: PR for MCP servers. Also consider anthropic-connectors for Claude connector
+    listing.
+  url: https://github.com/punkpeye/awesome-mcp-servers
+  catalog_repo: punkpeye/awesome-mcp-servers
+  catalog_path: README.md
+listing_unit: product
+splits_skills: false
+hosts:
+- cross-platform
+- claude
+- cursor
+item_types:
+- mcp

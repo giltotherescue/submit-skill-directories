@@ -1,0 +1,28 @@
+id: claude-plugins-official
+name: Claude Code Plugins Directory (official marketplace)
+description: Anthropic curated claude-plugins-official marketplace surfaced in Claude
+  Code /plugins.
+status: active
+access:
+  class: web_form
+  notes: Public GitHub repo required. Run claude plugin validate before submit.
+  url: https://platform.claude.com/plugins/submit
+listing_unit: plugin
+splits_skills: false
+hosts:
+- claude
+item_types:
+- plugin
+- skill
+- mcp
+- commands
+- agents
+install_guidance: Users install from Claude Code /plugins or Cowork plugin browser.
+references:
+- label: Submit (Console)
+  url: https://platform.claude.com/plugins/submit
+- label: claude-plugins-official
+  url: https://github.com/anthropics/claude-plugins-official
+tags:
+- claude
+- official

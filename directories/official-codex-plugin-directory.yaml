@@ -1,0 +1,17 @@
+id: official-codex-plugin-directory
+name: Official Codex plugin directory
+description: OpenAI Codex plugin directory (shared Plugins Directory with ChatGPT
+  as of 2026).
+status: wait
+access:
+  class: web_form
+  notes: May overlap chatgpt-plugins-directory — confirm single submission path.
+  url: https://platform.openai.com/plugins
+listing_unit: plugin
+splits_skills: false
+hosts:
+- codex
+item_types:
+- plugin
+- skill
+- mcp

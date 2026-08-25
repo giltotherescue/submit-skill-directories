@@ -1,0 +1,10 @@
+id: plaintextaccounting-org
+name: plaintextaccounting.org
+description: Plain text accounting ecosystem directory — niche; only for accounting-related
+  agent skills.
+status: skip
+access:
+  class: web_form
+  notes: Domain-specific; skip unless target skill is accounting-related.
+listing_unit: skill
+splits_skills: false

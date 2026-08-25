@@ -1,0 +1,17 @@
+id: sanjeed5-awesome-cursor-rules-mdc
+name: awesome-cursor-rules-mdc (sanjeed5)
+description: Curated Cursor .mdc rules list.
+status: active
+access:
+  class: github_pr
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://github.com/sanjeed5/awesome-cursor-rules-mdc
+  catalog_repo: sanjeed5/awesome-cursor-rules-mdc
+  catalog_path: README.md
+listing_unit: either
+splits_skills: false
+hosts:
+- cursor
+item_types:
+- rules

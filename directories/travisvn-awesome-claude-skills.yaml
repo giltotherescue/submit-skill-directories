@@ -1,0 +1,17 @@
+id: travisvn-awesome-claude-skills
+name: awesome-claude-skills (travisvn)
+description: Community curated Claude skills awesome list.
+status: active
+access:
+  class: github_pr
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://github.com/travisvn/awesome-claude-skills
+  catalog_repo: travisvn/awesome-claude-skills
+  catalog_path: README.md
+listing_unit: either
+splits_skills: false
+hosts:
+- claude
+item_types:
+- skill

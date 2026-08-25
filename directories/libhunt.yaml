@@ -1,0 +1,11 @@
+id: libhunt
+name: LibHunt
+description: Open source project discovery (awesome lists on LibHunt).
+status: wait
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://www.libhunt.com
+listing_unit: product
+splits_skills: false

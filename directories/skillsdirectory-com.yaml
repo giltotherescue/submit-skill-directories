@@ -1,47 +1,24 @@
 id: skillsdirectory-com
 name: Skills Directory (skillsdirectory.com)
-description: >
-  Curated, manually reviewed agent skills directory focused on quality and security grades.
-  GitHub sign-in required to submit skills for review.
+description: Curated, manually reviewed agent skills directory.
 status: active
-
 access:
   class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
   url: https://www.skillsdirectory.com/submit
-  notes: >
-    Sign in with GitHub. Submissions reviewed before publish. Copy-to-Claude style install on site.
-
 listing_unit: skill
 splits_skills: true
-
 hosts:
-  - claude
-  - cross-platform
-
+- claude
+- cross-platform
 item_types:
-  - skill
-
-install_guidance: >
-  Site offers copy-for-Claude flows; for engineering teams prefer Claude plugin marketplace
-  or project skill paths. Do not lead with third-party CLIs.
-
-proposal_fields:
-  - public_repo_url
-  - skill_name
-  - category
-  - security_notes
-  - per_skill_opt_in
-
+- skill
 references:
-  - label: Submit
-    url: https://www.skillsdirectory.com/submit
-  - label: About
-    url: https://www.skillsdirectory.com/about
-  - label: Browse skills
-    url: https://www.skillsdirectory.com/skills
-
+- label: Submit
+  url: https://www.skillsdirectory.com/submit
+- label: About
+  url: https://www.skillsdirectory.com/about
 tags:
-  - curated
-  - reviewed
-  - repo-import
-  - splits-skills
+- curated
+- splits-skills

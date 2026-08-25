@@ -1,0 +1,23 @@
+id: official-mcp-registry
+name: Official MCP Registry
+description: Anthropic/OpenAI-backed official MCP server registry (modelcontextprotocol.io
+  registry).
+status: active
+access:
+  class: web_form
+  notes: Verify current publisher submission workflow on registry site.
+  url: https://registry.modelcontextprotocol.io
+listing_unit: product
+splits_skills: false
+hosts:
+- cross-platform
+- claude
+- chatgpt
+item_types:
+- mcp
+references:
+- label: MCP Registry
+  url: https://registry.modelcontextprotocol.io
+tags:
+- mcp
+- official

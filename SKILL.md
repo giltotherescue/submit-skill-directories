@@ -81,21 +81,26 @@ After explicit approval:
 3. On completion, set `merged` / `rejected` / `skipped`
 4. If you forked a catalog repo, **delete the fork** when the PR merges or closes
 
-### 1.6 Listing unit — bundled plugins
+### 1.6 Listing unit — project shape combo table
 
-When the target is a **bundled host plugin** (manifest + 2+ first-party `SKILL.md`):
+After auto-detect (Section 0), pick directories using this table. Always honor each manifest's `listing_unit` when filing.
 
-- List as **one** `plugin` or `product` card per directory
-- Do **not** create N skill cards for N skills
+| Project shape | Directory strategy |
+|---------------|-------------------|
+| **Bundled plugin** (host manifest + 2+ first-party `SKILL.md`) | **Plugin/product channels only.** One card per directory. **Skip** all `splits_skills: true` boards and **per-skill CLIs** unless the user explicitly opts into per-skill cards. |
+| **Plugin + skills (user says skills are standalone)** | **Union** of plugin directories (`listing_unit: plugin` / `product`) **and** skill directories (`listing_unit: skill`). File plugin as one listing; file each standalone skill separately where appropriate. |
+| **Plugin + MCP** | **Union** of plugin/product directories **and** MCP directories (`item_types` includes `mcp`). One plugin listing + one MCP/connector listing where channels differ. |
+| **Skill + MCP** | **Union** of skill directories and MCP directories. Honor `listing_unit` per channel — do not collapse MCP into a skill card. |
+| **All three** (plugin + skills + MCP) | **Union** of all matching channels, still honoring `listing_unit` per directory. Bundled in-plugin skills stay on plugin/product cards only unless user opts into per-skill splits. |
 
-**Exception:** Directories with `splits_skills: true` import repos and may fan out per `SKILL.md`. **Skip** those for bundled plugins unless the user opts into per-skill cards.
+#### `splits_skills: true` boards (skill unit only)
 
-Repo-import skill boards (`splits_skills: true`, default `listing_unit: skill`):
+Only these eight manifests may set `splits_skills: true` with `listing_unit: skill`:
 
 - `skills-sh`, `skills-re`, `skillsplayground`, `agentskill-sh`
 - `github-gh-skill-index`, `localskills-sh`, `vskill`, `skillsdirectory-com`
 
-For those, prefer plugin/product directories (`cursor-directory`, `claude-plugin-directory`, `cursor-marketplace-official`, team marketplaces) for bundled plugins.
+For **bundled plugins**, skip these eight unless the user opts into per-skill cards. Prefer `cursor-directory`, `cursor-marketplace`, `claude-plugins-official`, `claude-plugins-community`, `anthropic-connectors`, and team marketplaces instead.
 
 ### 1.7 Install copy
 

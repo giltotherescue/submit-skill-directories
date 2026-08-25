@@ -1,0 +1,13 @@
+id: tonsofskills
+name: Tons of Skills
+description: Agent skills discovery directory.
+status: wait
+access:
+  class: web_form
+  notes: Verify tonsofskills submission URL.
+listing_unit: either
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill

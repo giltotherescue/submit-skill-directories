@@ -1,45 +1,24 @@
 id: agentskill-sh
 name: agentskill.sh
-description: >
-  Large AI agent skills directory and marketplace with quality/security scoring.
-  CLI and /learn skill for discovery; registry imports skills from GitHub repos.
+description: Large agent skills directory/marketplace with quality and security scoring.
 status: active
-
 access:
   class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
   url: https://agentskill.sh
-  notes: >
-    Primary discovery via agentskill.sh. Install uses @agentskill.sh/cli targeting agent skill dirs.
-    Multi-skill repos may appear as separate registry entries.
-
 listing_unit: skill
 splits_skills: true
-
 hosts:
-  - cross-platform
-  - claude
-  - cursor
-  - copilot
-
+- cross-platform
+- claude
+- cursor
+- copilot
 item_types:
-  - skill
-
-install_guidance: >
-  Prefer host plugin marketplace or bundled plugin install. agentskill CLI is secondary.
-
-proposal_fields:
-  - public_repo_url
-  - skill_slug
-  - per_skill_opt_in
-
+- skill
 references:
-  - label: agentskill.sh
-    url: https://agentskill.sh
-  - label: CLI package
-    url: https://www.npmjs.com/package/@agentskill.sh/cli
-
+- label: agentskill.sh
+  url: https://agentskill.sh
 tags:
-  - registry
-  - marketplace
-  - repo-import
-  - splits-skills
+- registry
+- splits-skills

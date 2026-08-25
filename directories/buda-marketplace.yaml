@@ -1,0 +1,10 @@
+id: buda-marketplace
+name: Buda Marketplace
+description: Third-party agent/plugin marketplace.
+status: wait
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+listing_unit: plugin
+splits_skills: false

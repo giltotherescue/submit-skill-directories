@@ -1,0 +1,10 @@
+id: betalist
+name: BetaList
+description: Startup beta launch directory.
+status: wait
+access:
+  class: web_form
+  notes: Marketing surface; not an agent skill catalog.
+  url: https://betalist.com
+listing_unit: product
+splits_skills: false

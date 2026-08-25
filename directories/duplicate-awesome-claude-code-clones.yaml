@@ -1,0 +1,16 @@
+id: duplicate-awesome-claude-code-clones
+name: awesome-claude-code clones (dedupe)
+description: 'Meta entry: prefer hesreallyhim-awesome-claude-code; avoid duplicate
+  PRs to forked awesome lists.'
+status: skip
+access:
+  class: web_form
+  notes: Use hesreallyhim-awesome-claude-code as canonical Claude awesome list unless
+    user names a specific clone.
+listing_unit: either
+splits_skills: false
+hosts:
+- claude
+item_types:
+- skill
+- plugin

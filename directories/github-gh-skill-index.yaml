@@ -1,51 +1,29 @@
 id: github-gh-skill-index
 name: GitHub gh skill index
-description: >
-  GitHub-native skill discovery and publishing via `gh skill` in GitHub CLI.
-  Validates SKILL.md against agentskills.io spec; indexes public repos for Copilot and cross-agent install.
+description: GitHub-native skill discovery/publishing via gh skill in GitHub CLI.
 status: active
-
 access:
   class: cli_publish
+  notes: Use gh skill publish after approval. Skip for bundled plugins unless per-skill
+    opt-in.
   url: https://cli.github.com/manual/gh_skill
-  notes: >
-    Use `gh skill publish` from the skills repo after validation. Install via `gh skill install`.
-    Treat as skill-level index — bundled plugins should use plugin marketplaces unless per-skill campaign.
-
 listing_unit: skill
 splits_skills: true
-
 hosts:
-  - copilot
-  - claude
-  - cursor
-  - codex
-  - gemini
-  - cross-platform
-
+- copilot
+- claude
+- cursor
+- codex
+- gemini
+- cross-platform
 item_types:
-  - skill
-
-install_guidance: >
-  Primary story: install via GitHub Copilot / agent host skill UI where available.
-  gh skill install is an advanced path for developers already on GitHub CLI.
-
-proposal_fields:
-  - public_repo_url
-  - skill_paths
-  - gh_skill_publish_command
-  - per_skill_opt_in
-
+- skill
 references:
-  - label: gh skill manual
-    url: https://cli.github.com/manual/gh_skill
-  - label: GitHub changelog
-    url: https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/
-  - label: Copilot agent skills docs
-    url: https://docs.github.com/en/copilot/concepts/agents/about-agent-skills
-
+- label: gh skill manual
+  url: https://cli.github.com/manual/gh_skill
+- label: Changelog
+  url: https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/
 tags:
-  - github
-  - cli
-  - repo-import
-  - splits-skills
+- github
+- cli
+- splits-skills

@@ -1,0 +1,26 @@
+id: cursor-marketplace
+name: Cursor Marketplace (official)
+description: Anysphere-reviewed official Cursor Marketplace for flagship plugins.
+status: active
+access:
+  class: web_form
+  notes: Manual review. One plugin per submission.
+  url: https://cursor.com/marketplace/publish
+listing_unit: plugin
+splits_skills: false
+hosts:
+- cursor
+item_types:
+- plugin
+- skill
+- mcp
+install_guidance: Users install from Cursor Marketplace (Customize → Plugins).
+references:
+- label: Publish
+  url: https://cursor.com/marketplace/publish
+- label: Docs
+  url: https://cursor.com/docs/plugins
+tags:
+- cursor
+- official
+- reviewed

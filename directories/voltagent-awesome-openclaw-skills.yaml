@@ -1,0 +1,17 @@
+id: voltagent-awesome-openclaw-skills
+name: awesome-openclaw-skills (VoltAgent)
+description: OpenClaw agent skills awesome list.
+status: active
+access:
+  class: github_pr
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://github.com/VoltAgent/awesome-openclaw-skills
+  catalog_repo: VoltAgent/awesome-openclaw-skills
+  catalog_path: README.md
+listing_unit: either
+splits_skills: false
+hosts:
+- other
+item_types:
+- skill

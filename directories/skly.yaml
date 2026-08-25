@@ -1,0 +1,10 @@
+id: skly
+name: Skly
+description: Skills/tools directory (skly).
+status: wait
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+listing_unit: skill
+splits_skills: false

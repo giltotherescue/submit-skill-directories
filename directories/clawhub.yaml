@@ -1,0 +1,14 @@
+id: clawhub
+name: ClawHub
+description: OpenClaw/Claw ecosystem hub for skills and packages.
+status: wait
+access:
+  class: web_form
+  notes: Verify ClawHub submission workflow for OpenClaw skills.
+listing_unit: either
+splits_skills: false
+hosts:
+- other
+item_types:
+- skill
+- plugin

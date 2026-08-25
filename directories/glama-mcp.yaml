@@ -1,0 +1,20 @@
+id: glama-mcp
+name: Glama MCP directory
+description: Glama.ai MCP server directory and rankings.
+status: active
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://glama.ai/mcp/servers
+listing_unit: product
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- mcp
+references:
+- label: Glama MCP
+  url: https://glama.ai/mcp/servers
+tags:
+- mcp

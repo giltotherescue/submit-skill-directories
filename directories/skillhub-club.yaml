@@ -1,0 +1,13 @@
+id: skillhub-club
+name: SkillHub Club
+description: Community skill hub and directory.
+status: wait
+access:
+  class: web_form
+  notes: Verify skillhub.club submission process.
+listing_unit: either
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill

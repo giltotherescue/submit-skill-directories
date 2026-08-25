@@ -1,0 +1,25 @@
+id: anthropic-connectors
+name: Anthropic Connectors Directory (MCP)
+description: Anthropic directory for MCP connectors, MCPB desktop extensions, and
+  MCP Apps.
+status: active
+access:
+  class: web_form
+  notes: Team/Enterprise org often required for claude.ai admin portal; Console paths
+    for individuals.
+  url: https://platform.claude.com/connectors/submit
+listing_unit: product
+splits_skills: false
+hosts:
+- claude
+item_types:
+- mcp
+install_guidance: Users enable connectors from Claude.ai, Desktop, Claude Code, or
+  Cowork.
+references:
+- label: Connectors docs
+  url: https://docs.anthropic.com/en/docs/connectors
+tags:
+- claude
+- mcp
+- official

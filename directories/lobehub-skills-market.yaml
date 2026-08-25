@@ -1,0 +1,14 @@
+id: lobehub-skills-market
+name: LobeHub skills market
+description: LobeHub agent skills marketplace/discovery.
+status: wait
+access:
+  class: web_form
+  notes: Verify LobeHub skills market submission process.
+  url: https://lobehub.com
+listing_unit: either
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill

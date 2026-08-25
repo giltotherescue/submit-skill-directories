@@ -1,0 +1,15 @@
+id: microsoft-cat
+name: Microsoft CAT
+description: Microsoft Customer Advisory Team resources — verify agent skills/plugin
+  listing relevance.
+status: wait
+access:
+  class: web_form
+  notes: Confirm whether this is a public submission directory or internal catalog.
+listing_unit: product
+splits_skills: false
+hosts:
+- copilot
+item_types:
+- skill
+- plugin

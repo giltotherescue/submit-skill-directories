@@ -1,0 +1,14 @@
+id: awesomeclaude-ai-skills
+name: awesomeclaude.ai skills
+description: awesomeclaude.ai skills index.
+status: wait
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+listing_unit: skill
+splits_skills: false
+hosts:
+- claude
+item_types:
+- skill

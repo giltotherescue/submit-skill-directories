@@ -20,9 +20,10 @@ Agents should ask these (or infer from the repo) before proposing directory subm
 
 ## Listing strategy
 
-4. **Bundled plugin check:** Is this a host plugin with multiple first-party skills?
-   - If yes, default to **one** plugin/product listing per directory (Section 1.6).
-   - Per-skill cards only if the user opts in (especially on `splits_skills: true` boards).
+4. **Bundled plugin check (Section 1.6 combo table):**
+   - Bundled plugin → plugin/product dirs only; skip splits_skills boards unless per-skill opt-in
+   - Plugin + standalone skills → union of plugin + skill dirs
+   - Any combo with MCP → union, honoring listing_unit per manifest
 
 5. Which directories are in scope for this pass?
    - All `active` matches, or a named subset?

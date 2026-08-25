@@ -1,0 +1,10 @@
+id: alternativeto
+name: AlternativeTo
+description: Software alternatives directory.
+status: wait
+access:
+  class: web_form
+  notes: Discovery/marketing; not skill-specific.
+  url: https://alternativeto.net
+listing_unit: product
+splits_skills: false

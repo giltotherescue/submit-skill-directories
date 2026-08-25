@@ -1,0 +1,14 @@
+id: clau-de-shortlink
+name: clau.de plugin directory submission
+description: Short URL redirect to Claude plugin directory submission form.
+status: active
+access:
+  class: web_form
+  notes: Alias/entry point for claude-plugins-community submission flow.
+  url: https://clau.de/plugin-directory-submission
+listing_unit: plugin
+splits_skills: false
+hosts:
+- claude
+item_types:
+- plugin

@@ -14,8 +14,8 @@ access:
   notes: >
     Access caveats (org plan, OAuth, review SLA, etc.).
 
-listing_unit: either # skill | plugin | product | either
-splits_skills: false # true = repo-import board may list each SKILL.md separately
+listing_unit: either # skill | plugin | product | either — REQUIRED
+splits_skills: false # REQUIRED — true only on the eight repo-import skill boards
 
 hosts:
   - cross-platform

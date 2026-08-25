@@ -8,7 +8,9 @@
     "id",
     "name",
     "status",
-    "access"
+    "access",
+    "listing_unit",
+    "splits_skills"
   ],
   "additionalProperties": false,
   "properties": {

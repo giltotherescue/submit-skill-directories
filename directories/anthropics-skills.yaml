@@ -1,0 +1,18 @@
+id: anthropics-skills
+name: anthropics/skills (official examples)
+description: Anthropic reference skills repository — not a third-party submission
+  directory.
+status: skip
+access:
+  class: invite_only
+  notes: Reference examples only. Use claude-plugins-official or community registries
+    for third-party listings.
+  url: https://github.com/anthropics/skills
+  catalog_repo: anthropics/skills
+listing_unit: skill
+splits_skills: false
+hosts:
+- claude
+- cross-platform
+item_types:
+- skill

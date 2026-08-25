@@ -17,6 +17,19 @@ ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = ROOT / "schema" / "directory.schema.json"
 MANIFEST_DIR = ROOT / "directories"
 
+CANONICAL_SPLITS_SKILLS = {
+    "skills-re",
+    "skillsplayground",
+    "agentskill-sh",
+    "github-gh-skill-index",
+    "localskills-sh",
+    "skills-sh",
+    "vskill",
+    "skillsdirectory-com",
+}
+
+EXPECTED_MANIFEST_COUNT = 96
+
 
 def load_schema() -> dict:
     with SCHEMA_PATH.open(encoding="utf-8") as f:
@@ -31,7 +44,6 @@ def validate_manifest(manifest: dict, schema: dict, path: Path) -> list[str]:
         if key not in manifest:
             errors.append(f"{path}: missing required field '{key}'")
 
-    # id must match filename
     expected_id = path.stem
     if manifest.get("id") != expected_id:
         errors.append(
@@ -55,13 +67,26 @@ def validate_manifest(manifest: dict, schema: dict, path: Path) -> list[str]:
     if access.get("class") not in allowed_classes:
         errors.append(f"{path}: invalid access.class '{access.get('class')}'")
 
-    listing_unit = manifest.get("listing_unit", "either")
+    listing_unit = manifest.get("listing_unit")
     if listing_unit not in {"skill", "plugin", "product", "either"}:
         errors.append(f"{path}: invalid listing_unit '{listing_unit}'")
 
-    splits = manifest.get("splits_skills", False)
+    splits = manifest.get("splits_skills")
     if not isinstance(splits, bool):
         errors.append(f"{path}: splits_skills must be boolean")
+
+    mid = manifest.get("id")
+    if splits is True and mid not in CANONICAL_SPLITS_SKILLS:
+        errors.append(
+            f"{path}: splits_skills: true only allowed for {sorted(CANONICAL_SPLITS_SKILLS)}"
+        )
+    if splits is True and listing_unit != "skill":
+        errors.append(f"{path}: splits_skills: true requires listing_unit: skill")
+    if mid in CANONICAL_SPLITS_SKILLS:
+        if splits is not True:
+            errors.append(f"{path}: must set splits_skills: true")
+        if listing_unit != "skill":
+            errors.append(f"{path}: must set listing_unit: skill")
 
     allowed_hosts = {
         "cursor",
@@ -98,20 +123,19 @@ def main() -> int:
 
     schema = load_schema()
     yaml_files = sorted(MANIFEST_DIR.glob("*.yaml"))
-    if not yaml_files:
-        print("No manifests found.", file=sys.stderr)
-        return 1
+    manifest_files = [p for p in yaml_files if p.name != "_template.yaml"]
 
-    if yaml_files == [MANIFEST_DIR / "_template.yaml"]:
-        print("Only _template.yaml found; add real manifests.", file=sys.stderr)
+    if len(manifest_files) != EXPECTED_MANIFEST_COUNT:
+        print(
+            f"Expected {EXPECTED_MANIFEST_COUNT} manifests, found {len(manifest_files)}",
+            file=sys.stderr,
+        )
         return 1
 
     all_errors: list[str] = []
     seen_ids: set[str] = set()
 
-    for path in yaml_files:
-        if path.name == "_template.yaml":
-            continue
+    for path in manifest_files:
         with path.open(encoding="utf-8") as f:
             manifest = yaml.safe_load(f) or {}
         if not isinstance(manifest, dict):
@@ -129,8 +153,7 @@ def main() -> int:
             print(f"  - {err}")
         return 1
 
-    count = len([p for p in yaml_files if p.name != "_template.yaml"])
-    print(f"OK: {count} manifest(s) validated.")
+    print(f"OK: {len(manifest_files)} manifest(s) validated.")
     return 0
 
 

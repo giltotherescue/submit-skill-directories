@@ -1,0 +1,14 @@
+id: caramaschihg-awesome-ai-agents-2026
+name: awesome-ai-agents-2026
+description: 2026 curated awesome AI agents list.
+status: wait
+access:
+  class: github_pr
+  notes: Verify GitHub repo URL for caramaschihg/awesome-ai-agents-2026.
+listing_unit: either
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- agents
+- skill

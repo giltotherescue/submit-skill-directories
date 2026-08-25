@@ -41,16 +41,13 @@ Directories disagree on what a single listing represents. The playbook normalize
 | `product` | A product or suite (may include plugin + docs + MCP). | Team marketplaces, monorepos marketed as one offering. |
 | `either` | Directory accepts more than one shape; agent must choose. | Community indexes with auto-detection. |
 
-### Section 1.6 — Bundled plugin rule
+### Section 1.6 combo table (SKILL.md)
 
-When the target project is a **bundled host plugin** — defined as:
-
-- a host plugin manifest (e.g. `.cursor-plugin/plugin.json`, `.claude-plugin/plugin.json`, or Agent Plugins `plugin.json`), **and**
-- **two or more** first-party `SKILL.md` files shipped in that plugin,
-
-then list it as **one** `plugin` or `product` card, **not** one card per skill.
-
-Apply this on directories where `listing_unit` is `plugin`, `product`, or `either`. Do **not** fan out bundled plugins into N skill listings unless the user explicitly opts into per-skill cards.
+| Project shape | Strategy |
+|---------------|----------|
+| Bundled plugin | Plugin/product channels only; skip splits_skills boards and per-skill CLIs unless user opts in |
+| Plugin + standalone skills | Union of plugin + skill directories |
+| Plugin + MCP / skill + MCP / all three | Union of matching channels, honoring `listing_unit` per manifest |
 
 ## `splits_skills`
 
@@ -62,7 +59,7 @@ Default agent behavior:
 2. For single-skill repos or explicit per-skill campaigns, set `listing_unit: skill` in the proposal.
 3. Prefer directories with `listing_unit: plugin` or `product` for bundled host plugins.
 
-Repo-import skill boards in this catalog (all `splits_skills: true`, `listing_unit: skill`):
+Repo-import skill boards in this catalog — **only these eight** may use `splits_skills: true` with `listing_unit: skill`:
 
 - `skills-sh`
 - `skills-re`
@@ -72,6 +69,8 @@ Repo-import skill boards in this catalog (all `splits_skills: true`, `listing_un
 - `localskills-sh`
 - `vskill`
 - `skillsdirectory-com`
+
+No other manifest may set `splits_skills: true`. The validator enforces this.
 
 ## Install copy (end users)
 

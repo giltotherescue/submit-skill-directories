@@ -33,7 +33,8 @@ Recommend **host marketplace or plugin install** for end users — not `npx skil
 | [CONTRIBUTING.md](CONTRIBUTING.md) | One directory = one YAML PR |
 | [onboarding-questions.md](onboarding-questions.md) | Intake questions for agents |
 | [templates/.agent-directory-submissions/](templates/.agent-directory-submissions/) | Log template for target projects |
-| [scripts/validate_manifests.py](scripts/validate_manifests.py) | Manifest validator |
+| [scripts/validate_manifests.py](scripts/validate_manifests.py) | Manifest validator (expects 96 manifests) |
+| [scripts/generate_catalog.py](scripts/generate_catalog.py) | Regenerate canonical catalog stubs |
 
 Validate manifests:
 
@@ -43,23 +44,25 @@ python3 scripts/validate_manifests.py
 
 ## For agents
 
-1. Read [SKILL.md](SKILL.md) — especially **Section 1.6** (bundled plugin listing unit) and **splits_skills** behavior.
+1. Read [SKILL.md](SKILL.md) — especially **Section 1.6 combo table** and the eight `splits_skills` boards.
 2. Load manifests from `directories/*.yaml`; respect `status`, `listing_unit`, and `access.class`.
 3. Copy [templates/.agent-directory-submissions/log.yaml](templates/.agent-directory-submissions/log.yaml) into the **target project** if missing.
 4. Propose → wait for approval → file → update log → delete catalog forks.
 5. Never clone catalog repos; use `gh` / GitHub API only.
 
-## Directory coverage
+## Directory catalog
 
-Manifests include official and community boards, for example:
+**96 manifests** under `directories/` (plus `_template.yaml`). Each filename is the canonical `id` (e.g. `cursor-directory.yaml`, `skills-sh.yaml`).
 
-- Cursor: `cursor-directory`, `cursor-marketplace-official`
-- Claude: `claude-plugin-directory`, `claude-connectors-directory`
-- ChatGPT / OpenAI: `chatgpt-plugins-directory`
-- Repo-import skill boards (all `splits_skills: true`): `skills-sh`, `skills-re`, `skillsplayground`, `agentskill-sh`, `github-gh-skill-index`, `localskills-sh`, `vskill`, `skillsdirectory-com`
-- Awesome / curated lists: `awesome-agent-skills`, `awesome-claude-code`, and others
+- **Verified / active** where submission paths are documented (e.g. `cursor-directory`, `cursor-marketplace`, `claude-plugins-official`, `skills-sh`)
+- **`status: wait`** stubs where the board exists but access needs verification
+- **`status: skip`** for meta/duplicate/reference entries (e.g. `duplicate-awesome-claude-code-clones`, `anthropics-skills`)
 
-See `directories/` for the full set and [docs/status-and-access.md](docs/status-and-access.md) for semantics.
+Only these eight may use `splits_skills: true` with `listing_unit: skill`:
+
+`skills-sh`, `skills-re`, `skillsplayground`, `agentskill-sh`, `github-gh-skill-index`, `localskills-sh`, `vskill`, `skillsdirectory-com`
+
+See `directories/` for the full catalog and [docs/status-and-access.md](docs/status-and-access.md) for semantics.
 
 ## Contributing
 

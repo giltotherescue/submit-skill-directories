@@ -1,0 +1,9 @@
+id: slashdot
+name: Slashdot
+description: Tech news — not an agent skill directory.
+status: skip
+access:
+  class: web_form
+  notes: Press/marketing only if relevant.
+listing_unit: product
+splits_skills: false

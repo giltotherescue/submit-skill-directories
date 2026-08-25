@@ -1,0 +1,14 @@
+id: domain-specific-awesome
+name: Domain-specific awesome lists
+description: Placeholder for vertical awesome lists (DevOps, security, data, etc.)
+  — pick the specific list manifest instead.
+status: skip
+access:
+  class: web_form
+  notes: Do not file here. Select a concrete awesome-list manifest (e.g. composiohq-awesome-claude-skills).
+listing_unit: either
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill

@@ -1,0 +1,10 @@
+id: capterra
+name: Capterra
+description: Software directory and reviews.
+status: wait
+access:
+  class: web_form
+  notes: Marketing/reviews surface.
+  url: https://www.capterra.com
+listing_unit: product
+splits_skills: false

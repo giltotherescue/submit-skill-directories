@@ -1,0 +1,19 @@
+id: e2b-dev-awesome-ai-agents
+name: awesome-ai-agents (e2b-dev)
+description: E2B-maintained awesome AI agents list (may include skills/tools).
+status: active
+access:
+  class: github_pr
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://github.com/e2b-dev/awesome-ai-agents
+  catalog_repo: e2b-dev/awesome-ai-agents
+  catalog_path: README.md
+listing_unit: either
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill
+- plugin
+- agents

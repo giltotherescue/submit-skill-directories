@@ -1,0 +1,13 @@
+id: skillsmp
+name: SkillsMP
+description: Agent skills marketplace/directory (skillsmp).
+status: wait
+access:
+  class: web_form
+  notes: Verify skillsmp.com submission workflow.
+listing_unit: either
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill
