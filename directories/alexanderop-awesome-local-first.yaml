@@ -1,0 +1,11 @@
+id: alexanderop-awesome-local-first
+name: awesome-local-first (alexanderop)
+description: Local-first software awesome list.
+status: wait
+access:
+  class: github_pr
+  notes: Only if target is local-first agent tooling.
+listing_unit: product
+splits_skills: false
+hosts:
+- cross-platform

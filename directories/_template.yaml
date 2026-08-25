@@ -1,0 +1,45 @@
+# Copy to directories/<id>.yaml — one directory per file (see CONTRIBUTING.md)
+
+id: example-directory
+name: Example Directory
+description: >
+  Short description of what this directory lists and which agents it serves.
+status: wait # active | wait | skip
+
+access:
+  class: web_form # web_form | github_pr | github_api | cli_publish | email | invite_only | auto_index
+  url: https://example.com/submit
+  catalog_repo: "" # optional: owner/repo — use gh/API only, never clone
+  catalog_path: "" # optional: path for PR-based catalogs
+  notes: >
+    Access caveats (org plan, OAuth, review SLA, etc.).
+
+listing_unit: either # skill | plugin | product | either — REQUIRED
+splits_skills: false # REQUIRED — true only on the eight repo-import skill boards
+
+hosts:
+  - cross-platform
+
+item_types:
+  - skill
+  - plugin
+
+install_guidance: >
+  Recommend installing via the host marketplace or in-app plugin browser.
+  Do not lead with npx skills add, gh skill install, or per-path skill CLIs.
+
+proposal_fields:
+  - public_repo_url
+  - listing_title
+  - listing_description
+  - listing_unit
+  - install_copy
+
+references:
+  - label: Submit page
+    url: https://example.com/submit
+  - label: Official docs
+    url: https://example.com/docs
+
+tags:
+  - example

@@ -1,0 +1,13 @@
+id: codex-local-marketplace
+name: Codex local marketplace
+description: Local or project-scoped Codex plugin marketplace configuration.
+status: wait
+access:
+  class: web_form
+  notes: Verify Codex local marketplace.json / team import docs.
+listing_unit: plugin
+splits_skills: false
+hosts:
+- codex
+item_types:
+- plugin

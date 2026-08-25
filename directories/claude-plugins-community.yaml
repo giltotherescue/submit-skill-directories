@@ -1,0 +1,25 @@
+id: claude-plugins-community
+name: Claude plugins community catalog
+description: Community plugin catalog synced into Claude Code Discover tab after in-app
+  submission review.
+status: active
+access:
+  class: web_form
+  notes: Automated review; approved plugins pinned into anthropics/claude-plugins-community
+    (nightly sync).
+  url: https://clau.de/plugin-directory-submission
+listing_unit: plugin
+splits_skills: false
+hosts:
+- claude
+item_types:
+- plugin
+- skill
+- mcp
+install_guidance: Install via Claude Code plugin marketplace after approval.
+references:
+- label: Submission shortlink
+  url: https://clau.de/plugin-directory-submission
+tags:
+- claude
+- community

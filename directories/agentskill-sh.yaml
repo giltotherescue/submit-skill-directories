@@ -1,0 +1,24 @@
+id: agentskill-sh
+name: agentskill.sh
+description: Large agent skills directory/marketplace with quality and security scoring.
+status: active
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://agentskill.sh
+listing_unit: skill
+splits_skills: true
+hosts:
+- cross-platform
+- claude
+- cursor
+- copilot
+item_types:
+- skill
+references:
+- label: agentskill.sh
+  url: https://agentskill.sh
+tags:
+- registry
+- splits-skills

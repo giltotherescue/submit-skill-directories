@@ -1,0 +1,14 @@
+id: grok-bot-plugins
+name: Grok bot plugins
+description: Grok bot plugin ecosystem directory.
+status: wait
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+listing_unit: plugin
+splits_skills: false
+hosts:
+- other
+item_types:
+- plugin

@@ -1,0 +1,11 @@
+id: taaft
+name: There's An AI For That (TAAFT)
+description: AI tools directory.
+status: wait
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://theresanaiforthat.com
+listing_unit: product
+splits_skills: false

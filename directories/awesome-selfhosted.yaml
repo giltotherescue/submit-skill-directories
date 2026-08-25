@@ -1,0 +1,17 @@
+id: awesome-selfhosted
+name: awesome-selfhosted
+description: Awesome self-hosted software list — only if MCP server is self-hostable
+  infrastructure.
+status: wait
+access:
+  class: github_pr
+  notes: Include only for self-hosted MCP/server products.
+  url: https://github.com/awesome-selfhosted/awesome-selfhosted
+  catalog_repo: awesome-selfhosted/awesome-selfhosted
+  catalog_path: README.md
+listing_unit: product
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- mcp

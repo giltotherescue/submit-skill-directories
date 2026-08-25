@@ -1,0 +1,16 @@
+id: openai-skills
+name: OpenAI skills documentation
+description: OpenAI platform skills/docs surface for Codex and ChatGPT agent skills.
+status: wait
+access:
+  class: web_form
+  notes: Distinguish from chatgpt-plugins-directory. Verify current OpenAI skills
+    publishing path.
+  url: https://platform.openai.com/docs
+listing_unit: either
+splits_skills: false
+hosts:
+- chatgpt
+- codex
+item_types:
+- skill

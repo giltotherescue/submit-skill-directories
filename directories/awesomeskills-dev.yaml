@@ -1,0 +1,14 @@
+id: awesomeskills-dev
+name: awesomeskills.dev
+description: Cross-platform agent skills directory and discovery site.
+status: wait
+access:
+  class: web_form
+  notes: Verify submission workflow on awesomeskills.dev.
+  url: https://awesomeskills.dev
+listing_unit: either
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill

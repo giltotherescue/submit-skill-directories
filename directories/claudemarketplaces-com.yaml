@@ -1,0 +1,13 @@
+id: claudemarketplaces-com
+name: claudemarketplaces.com
+description: Third-party Claude marketplaces aggregator/directory.
+status: wait
+access:
+  class: web_form
+  notes: Verify listing submission process.
+listing_unit: plugin
+splits_skills: false
+hosts:
+- claude
+item_types:
+- plugin

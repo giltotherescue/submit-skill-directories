@@ -1,0 +1,19 @@
+id: chatgpt-plugins-directory
+name: OpenAI Plugins Directory (ChatGPT / Codex)
+description: OpenAI Plugins Directory for ChatGPT and Codex plugins (skills, MCP,
+  optional UI).
+status: wait
+access:
+  class: web_form
+  notes: Verified individual/business and manual review typically required. Confirm
+    current portal policy.
+  url: https://platform.openai.com/plugins
+listing_unit: plugin
+splits_skills: false
+hosts:
+- chatgpt
+- codex
+item_types:
+- plugin
+- skill
+- mcp

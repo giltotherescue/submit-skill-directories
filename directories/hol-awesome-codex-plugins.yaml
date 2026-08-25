@@ -1,0 +1,16 @@
+id: hol-awesome-codex-plugins
+name: awesome-codex-plugins (hol)
+description: Curated Codex plugins awesome list.
+status: active
+access:
+  class: github_pr
+  notes: Verify repo exists and contribution guidelines.
+  url: https://github.com/hol/awesome-codex-plugins
+  catalog_repo: hol/awesome-codex-plugins
+  catalog_path: README.md
+listing_unit: plugin
+splits_skills: false
+hosts:
+- codex
+item_types:
+- plugin

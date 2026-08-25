@@ -1,0 +1,17 @@
+id: ccplugins-awesome-claude-code-plugins
+name: awesome-claude-code-plugins (ccplugins)
+description: Curated Claude Code plugins awesome list.
+status: active
+access:
+  class: github_pr
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://github.com/ccplugins/awesome-claude-code-plugins
+  catalog_repo: ccplugins/awesome-claude-code-plugins
+  catalog_path: README.md
+listing_unit: plugin
+splits_skills: false
+hosts:
+- claude
+item_types:
+- plugin

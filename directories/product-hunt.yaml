@@ -1,0 +1,16 @@
+id: product-hunt
+name: Product Hunt
+description: Product launch platform (marketing surface, not a skill directory).
+status: wait
+access:
+  class: web_form
+  notes: Launch/marketing only — not a technical skill index. Optional credibility
+    play.
+  url: https://www.producthunt.com
+listing_unit: product
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- plugin
+- skill

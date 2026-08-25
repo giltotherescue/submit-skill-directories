@@ -1,0 +1,18 @@
+id: hesreallyhim-awesome-claude-code
+name: awesome-claude-code (hesreallyhim)
+description: Curated Claude Code skills, hooks, plugins, MCP servers, and workflows.
+status: active
+access:
+  class: github_pr
+  notes: PR to README. Delete fork after merge/close.
+  url: https://github.com/hesreallyhim/awesome-claude-code
+  catalog_repo: hesreallyhim/awesome-claude-code
+  catalog_path: README.md
+listing_unit: either
+splits_skills: false
+hosts:
+- claude
+item_types:
+- skill
+- plugin
+- mcp

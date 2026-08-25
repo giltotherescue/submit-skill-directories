@@ -1,0 +1,11 @@
+id: devhunt
+name: DevHunt
+description: Developer tools launch platform.
+status: wait
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://devhunt.org
+listing_unit: product
+splits_skills: false

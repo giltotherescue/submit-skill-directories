@@ -1,0 +1,16 @@
+id: toolify-ai
+name: Toolify.ai
+description: AI tools directory.
+status: wait
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://www.toolify.ai
+listing_unit: product
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill
+- plugin

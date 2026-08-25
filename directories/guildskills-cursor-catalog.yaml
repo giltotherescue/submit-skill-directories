@@ -1,0 +1,14 @@
+id: guildskills-cursor-catalog
+name: Guildskills Cursor catalog
+description: Community Cursor skills/plugins catalog (guildskills).
+status: wait
+access:
+  class: web_form
+  notes: Verify guildskills submission URL and whether catalog is active.
+listing_unit: either
+splits_skills: false
+hosts:
+- cursor
+item_types:
+- skill
+- plugin

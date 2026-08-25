@@ -1,0 +1,12 @@
+id: mcp-directory
+name: MCP Directory (generic)
+description: Generic MCP directory placeholder — prefer smithery, glama-mcp, pulsemcp,
+  official-mcp-registry.
+status: skip
+access:
+  class: web_form
+  notes: Use a concrete MCP manifest instead of this generic entry.
+listing_unit: product
+splits_skills: false
+item_types:
+- mcp

@@ -1,0 +1,14 @@
+id: agent-skill-exchange
+name: Agent Skill Exchange
+description: Community agent skill exchange/directory.
+status: wait
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+listing_unit: skill
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill

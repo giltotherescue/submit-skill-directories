@@ -1,0 +1,13 @@
+id: grok-connectors
+name: Grok connectors
+description: xAI Grok connector directory (if published).
+status: wait
+access:
+  class: web_form
+  notes: Verify xAI Grok connector submission portal.
+listing_unit: product
+splits_skills: false
+hosts:
+- other
+item_types:
+- mcp

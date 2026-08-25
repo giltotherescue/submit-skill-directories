@@ -1,0 +1,13 @@
+id: skillsdirectory-co
+name: skillsdirectory.co
+description: Alternate skillsdirectory TLD — verify relationship to skillsdirectory.com.
+status: wait
+access:
+  class: web_form
+  notes: May redirect or duplicate skillsdirectory-com; verify before filing.
+listing_unit: skill
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill

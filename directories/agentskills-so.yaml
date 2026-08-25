@@ -1,0 +1,13 @@
+id: agentskills-so
+name: agentskills.so
+description: Agent skills discovery/registry site.
+status: wait
+access:
+  class: web_form
+  notes: Verify agentskills.so listing submission.
+listing_unit: either
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill

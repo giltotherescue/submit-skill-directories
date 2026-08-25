@@ -1,0 +1,23 @@
+id: smithery
+name: Smithery
+description: MCP server registry and distribution platform.
+status: active
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://smithery.ai
+listing_unit: product
+splits_skills: false
+hosts:
+- cross-platform
+- claude
+- cursor
+item_types:
+- mcp
+references:
+- label: Smithery
+  url: https://smithery.ai
+tags:
+- mcp
+- registry

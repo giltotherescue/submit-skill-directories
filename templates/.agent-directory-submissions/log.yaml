@@ -1,0 +1,38 @@
+# Directory submission log for the target project.
+# Copy this file to <project>/.agent-directory-submissions/log.yaml
+# Append-only: never delete prior entries; add new rows for state changes.
+
+version: 1
+project:
+  name: ""          # e.g. my-agent-plugin
+  repo: ""          # e.g. https://github.com/org/repo
+  default_branch: main
+
+entries: []
+# Example entry:
+# - id: 2026-08-25-cursor-directory-001
+#   directory_id: cursor-directory
+#   listing_unit: plugin
+#   artifact:
+#     type: plugin
+#     repo: https://github.com/org/repo
+#     manifest_path: .cursor-plugin/plugin.json
+#     skill_paths:
+#       - skills/deploy/SKILL.md
+#       - skills/review/SKILL.md
+#   status: proposed          # proposed | approved | filed | merged | rejected | skipped
+#   proposed_at: "2026-08-25T00:00:00Z"
+#   approved_at: null
+#   filed_at: null
+#   completed_at: null
+#   proposal:
+#     title: ""
+#     summary: ""
+#     install_copy: "Install from Cursor Marketplace or team marketplace import."
+#   filing:
+#     method: web_form        # web_form | github_pr | cli_publish | auto_index
+#     url: ""
+#     pr_url: null
+#     fork_deleted: false
+#   notes: ""
+#   agent: ""                 # optional: agent or human who acted

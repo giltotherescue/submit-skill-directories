@@ -1,0 +1,24 @@
+id: skillsdirectory-com
+name: Skills Directory (skillsdirectory.com)
+description: Curated, manually reviewed agent skills directory.
+status: active
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://www.skillsdirectory.com/submit
+listing_unit: skill
+splits_skills: true
+hosts:
+- claude
+- cross-platform
+item_types:
+- skill
+references:
+- label: Submit
+  url: https://www.skillsdirectory.com/submit
+- label: About
+  url: https://www.skillsdirectory.com/about
+tags:
+- curated
+- splits-skills

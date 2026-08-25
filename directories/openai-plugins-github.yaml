@@ -1,0 +1,14 @@
+id: openai-plugins-github
+name: openai/plugins (historical)
+description: Historical OpenAI plugins GitHub examples — not a live submission directory.
+status: skip
+access:
+  class: invite_only
+  notes: Reference only. Use chatgpt-plugins-directory for current submissions.
+  url: https://github.com/openai/plugins
+listing_unit: plugin
+splits_skills: false
+hosts:
+- chatgpt
+item_types:
+- plugin

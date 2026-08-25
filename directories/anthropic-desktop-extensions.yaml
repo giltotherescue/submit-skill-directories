@@ -1,0 +1,14 @@
+id: anthropic-desktop-extensions
+name: Anthropic MCP desktop extensions
+description: Submission path for MCPB desktop extension connectors (distinct from
+  remote MCP connector portal).
+status: wait
+access:
+  class: web_form
+  notes: Verify current Anthropic desktop extension submission form URL and requirements.
+listing_unit: product
+splits_skills: false
+hosts:
+- claude
+item_types:
+- mcp

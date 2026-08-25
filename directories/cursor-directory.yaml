@@ -1,0 +1,29 @@
+id: cursor-directory
+name: cursor.directory
+description: Community discovery for Cursor plugins, MCP servers, rules, skills, and
+  agents. Auto-detects from public GitHub repo URL.
+status: active
+access:
+  class: web_form
+  notes: Sign in with GitHub or Google. No catalog repo to clone.
+  url: https://cursor.directory/plugins/new
+listing_unit: either
+splits_skills: false
+hosts:
+- cursor
+item_types:
+- skill
+- plugin
+- mcp
+- rules
+- agents
+install_guidance: Recommend Cursor Customize / Plugins or team marketplace import
+  — not npx skills add.
+references:
+- label: Submit
+  url: https://cursor.directory/plugins/new
+- label: Cursor plugins docs
+  url: https://cursor.com/docs/plugins
+tags:
+- cursor
+- community

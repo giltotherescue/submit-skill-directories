@@ -1,0 +1,22 @@
+id: vskill
+name: vSkill (verified-skill.com)
+description: Verified skill registry with automated security scanning from public
+  GitHub repos.
+status: active
+access:
+  class: cli_publish
+  notes: npx vskill submit owner/repo or web form. Scan locally first.
+  url: https://verified-skill.com/docs/submitting
+listing_unit: skill
+splits_skills: true
+hosts:
+- cross-platform
+item_types:
+- skill
+- plugin
+references:
+- label: Submitting
+  url: https://verified-skill.com/docs/submitting
+tags:
+- verified
+- splits-skills

@@ -1,0 +1,29 @@
+id: github-gh-skill-index
+name: GitHub gh skill index
+description: GitHub-native skill discovery/publishing via gh skill in GitHub CLI.
+status: active
+access:
+  class: cli_publish
+  notes: Use gh skill publish after approval. Skip for bundled plugins unless per-skill
+    opt-in.
+  url: https://cli.github.com/manual/gh_skill
+listing_unit: skill
+splits_skills: true
+hosts:
+- copilot
+- claude
+- cursor
+- codex
+- gemini
+- cross-platform
+item_types:
+- skill
+references:
+- label: gh skill manual
+  url: https://cli.github.com/manual/gh_skill
+- label: Changelog
+  url: https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/
+tags:
+- github
+- cli
+- splits-skills

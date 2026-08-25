@@ -1,0 +1,22 @@
+id: skills-sh
+name: skills.sh
+description: Open agent skills ecosystem leaderboard and registry; repo import may
+  fan out per SKILL.md.
+status: active
+access:
+  class: auto_index
+  notes: Skip for bundled plugins unless user opts into per-skill cards.
+  url: https://skills.sh
+listing_unit: skill
+splits_skills: true
+hosts:
+- cross-platform
+item_types:
+- skill
+install_guidance: Prefer host marketplace/plugin install; CLI is secondary.
+references:
+- label: skills.sh
+  url: https://skills.sh
+tags:
+- registry
+- splits-skills

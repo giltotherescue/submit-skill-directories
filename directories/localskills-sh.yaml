@@ -1,0 +1,27 @@
+id: localskills-sh
+name: localskills.sh
+description: Team skills/rules registry; one skill slug per publish unit.
+status: active
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://localskills.sh
+listing_unit: skill
+splits_skills: true
+hosts:
+- cross-platform
+- cursor
+- claude
+item_types:
+- skill
+- rules
+references:
+- label: Site
+  url: https://localskills.sh
+- label: Docs
+  url: https://docs.localskills.sh/getting-started/
+tags:
+- registry
+- team
+- splits-skills

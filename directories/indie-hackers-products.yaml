@@ -1,0 +1,10 @@
+id: indie-hackers-products
+name: Indie Hackers Products
+description: Indie Hackers product directory.
+status: wait
+access:
+  class: web_form
+  notes: Marketing/community surface.
+  url: https://www.indiehackers.com
+listing_unit: product
+splits_skills: false

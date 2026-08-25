@@ -1,0 +1,19 @@
+id: patrickjs-awesome-cursorrules
+name: awesome-cursorrules (PatrickJS)
+description: Comprehensive Cursor rules collection (legacy .cursorrules; related to
+  skills/rules discovery).
+status: active
+access:
+  class: github_pr
+  notes: PR-based awesome list. Rules-focused; include only if target ships .mdc rules
+    or SKILL.md.
+  url: https://github.com/PatrickJS/awesome-cursorrules
+  catalog_repo: PatrickJS/awesome-cursorrules
+  catalog_path: README.md
+listing_unit: either
+splits_skills: false
+hosts:
+- cursor
+item_types:
+- rules
+- skill

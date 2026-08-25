@@ -1,0 +1,25 @@
+id: skills-re
+name: skills.re (Agent Skill Registry)
+description: Agent-agnostic registry; GitHub import may register multiple skills per
+  repo.
+status: active
+access:
+  class: web_form
+  notes: Excludes dist/ on import. Skip for bundled plugins unless per-skill opt-in.
+  url: https://skills.re/submit
+listing_unit: skill
+splits_skills: true
+hosts:
+- cross-platform
+- claude
+- codex
+item_types:
+- skill
+references:
+- label: Submit
+  url: https://skills.re/submit
+- label: FAQ
+  url: https://skills.re/faq
+tags:
+- registry
+- splits-skills

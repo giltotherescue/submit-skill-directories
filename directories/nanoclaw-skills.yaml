@@ -1,0 +1,13 @@
+id: nanoclaw-skills
+name: Nanoclaw skills
+description: Nanoclaw agent skills catalog/templates ecosystem.
+status: wait
+access:
+  class: web_form
+  notes: Verify nanoclaw skills publish path.
+listing_unit: skill
+splits_skills: false
+hosts:
+- other
+item_types:
+- skill

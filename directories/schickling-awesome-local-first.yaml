@@ -1,0 +1,9 @@
+id: schickling-awesome-local-first
+name: awesome-local-first (schickling)
+description: Local-first software awesome list (schickling).
+status: wait
+access:
+  class: github_pr
+  notes: Only if target is local-first agent tooling.
+listing_unit: product
+splits_skills: false

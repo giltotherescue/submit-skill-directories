@@ -1,0 +1,15 @@
+id: hermes-agent-taps
+name: Hermes agent taps / skills hub
+description: Hermes agent third-party skill install paths and hub integrations.
+status: wait
+access:
+  class: web_form
+  notes: Hermes uses ~/.hermes/skills/ and hub installs — verify external listing
+    vs hub publish.
+  url: https://github.com/NousResearch/hermes-agent
+listing_unit: skill
+splits_skills: false
+hosts:
+- other
+item_types:
+- skill

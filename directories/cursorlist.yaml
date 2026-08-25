@@ -1,0 +1,16 @@
+id: cursorlist
+name: CursorList
+description: Cursor tools/rules directory.
+status: wait
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+listing_unit: either
+splits_skills: false
+hosts:
+- cursor
+item_types:
+- rules
+- skill
+- plugin

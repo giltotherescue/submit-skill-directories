@@ -1,0 +1,23 @@
+id: skillsplayground
+name: Skills Playground
+description: Community directory for Claude Code skills/plugins; auto-detects from
+  GitHub URL.
+status: active
+access:
+  class: web_form
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://skillsplayground.com/submit/
+listing_unit: skill
+splits_skills: true
+hosts:
+- claude
+item_types:
+- skill
+- plugin
+references:
+- label: Submit
+  url: https://skillsplayground.com/submit/
+tags:
+- claude
+- splits-skills

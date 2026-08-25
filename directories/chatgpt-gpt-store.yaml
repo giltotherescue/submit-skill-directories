@@ -1,0 +1,15 @@
+id: chatgpt-gpt-store
+name: ChatGPT GPT Store
+description: OpenAI GPT Store for custom GPTs (distinct from Codex/ChatGPT Plugins
+  Directory for agent skills).
+status: wait
+access:
+  class: web_form
+  notes: GPT Store is not the same as agent SKILL.md directories — confirm fit before
+    listing.
+listing_unit: product
+splits_skills: false
+hosts:
+- chatgpt
+item_types:
+- skill

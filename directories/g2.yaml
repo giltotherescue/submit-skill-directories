@@ -1,0 +1,10 @@
+id: g2
+name: G2
+description: Software reviews marketplace.
+status: wait
+access:
+  class: web_form
+  notes: SaaS reviews — only if shipping a productized agent tool with G2 category.
+  url: https://www.g2.com
+listing_unit: product
+splits_skills: false

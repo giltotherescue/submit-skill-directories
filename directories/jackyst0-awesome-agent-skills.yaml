@@ -1,0 +1,17 @@
+id: jackyst0-awesome-agent-skills
+name: awesome-agent-skills (JackyST0)
+description: Community awesome list of agent skills for Cursor, Claude Code, Copilot,
+  etc.
+status: active
+access:
+  class: github_pr
+  notes: PR to README. Use gh/API only; delete fork after merge/close.
+  url: https://github.com/JackyST0/awesome-agent-skills
+  catalog_repo: JackyST0/awesome-agent-skills
+  catalog_path: README.md
+listing_unit: either
+splits_skills: false
+hosts:
+- cross-platform
+item_types:
+- skill

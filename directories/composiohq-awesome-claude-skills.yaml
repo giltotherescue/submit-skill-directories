@@ -1,0 +1,17 @@
+id: composiohq-awesome-claude-skills
+name: awesome-claude-skills (ComposioHQ)
+description: Curated Claude skills list maintained by ComposioHQ.
+status: active
+access:
+  class: github_pr
+  notes: 'Manifest stub — verify submission URL, access requirements, and listing_unit
+    before setting status: active.'
+  url: https://github.com/ComposioHQ/awesome-claude-skills
+  catalog_repo: ComposioHQ/awesome-claude-skills
+  catalog_path: README.md
+listing_unit: either
+splits_skills: false
+hosts:
+- claude
+item_types:
+- skill

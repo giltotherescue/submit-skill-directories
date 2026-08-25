@@ -1,0 +1,13 @@
+id: claude-plugins-dev
+name: claude-plugins.dev
+description: Third-party Claude plugins discovery site.
+status: wait
+access:
+  class: web_form
+  notes: Verify claude-plugins.dev submission workflow.
+listing_unit: plugin
+splits_skills: false
+hosts:
+- claude
+item_types:
+- plugin
