@@ -1,0 +1,58 @@
+id: skillfoxx
+name: SkillFoxx
+description: >
+  Curated catalog of skills, MCP servers, plugins, subagents and CLIs for AI agents
+  (Claude Code, Cursor, Codex and others), in Russian and English. Every listing gets
+  an editor-written description, install commands and an access level with reasons.
+status: active
+
+access:
+  class: web_form
+  url: https://skillfoxx.ru/en/submit
+  catalog_repo: ""
+  catalog_path: ""
+  notes: >
+    Free, no account needed. The form takes a GitHub repository, an npm package or a
+    remote MCP server URL, plus the type, a short description, the submitter role
+    (author or found it) and an email for the decision. Editors review the README,
+    how the tool runs and the permissions it needs; the decision appears on a status
+    page linked from the confirmation email. Tools without an installable artifact
+    for the agent (skill, MCP server, plugin or CLI) are not listed.
+
+listing_unit: either
+splits_skills: false
+
+hosts:
+  - cross-platform
+  - claude
+  - cursor
+  - codex
+
+item_types:
+  - skill
+  - plugin
+  - mcp
+  - agents
+
+install_guidance: >
+  Recommend installing via the host marketplace or in-app plugin browser.
+  Do not lead with npx skills add, gh skill install, or per-path skill CLIs.
+
+proposal_fields:
+  - public_repo_url
+  - listing_type
+  - listing_description
+  - submitter_role
+  - contact_email
+
+references:
+  - label: Submit page
+    url: https://skillfoxx.ru/en/submit
+  - label: Catalog
+    url: https://skillfoxx.ru/en
+
+tags:
+  - skills
+  - mcp
+  - plugins
+  - multilingual
